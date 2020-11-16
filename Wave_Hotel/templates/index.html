@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Management System</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          rel="stylesheet"/>
+
+    <link href="{{url_for('static', filename = 'css/style.css')}}"
+          rel = "stylesheet"/>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+</head>
+<body style="background: url(static/images/wave2.jpg);
+      background-size:cover"
+      class="jumbotron bg-cover text-white" >
+
+    <div class="container">
+        <h1 class="text-center text-warning">MUỐN VÔ HỆ THỐNG HẢ?</h1>
+    </div>
+        {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}></p>
+        {% endif %}
+</body>
+</html>

@@ -1,0 +1,27 @@
+.col-center-block {
+float: none;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+html, body, .container {
+height: 100%;
+width: 100%;
+}
+.container {
+display: table;
+vertical-align: middle;
+}
+.vertical-center-row {
+display: table-cell;
+vertical-align: middle;
+
+}
+.form-group{
+margin:auto
+}
+
+.center{
+margin:auto
+}
