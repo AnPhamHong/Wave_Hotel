@@ -1,0 +1,167 @@
+{% extends 'base/layout.html' %}
+{% block banner %}
+<section class="w3l-servicesblock1" id="service">
+    <div class="features-with-17_sur py-5">
+        <div class="container py-lg-5 py-sm-4">
+            <div class="features-with-17-top_sur">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 align-self">
+                        <h3 class="title-small">Wave Hotel Services</h3>
+                        <p> Hệ thống phòng nghỉ của Wave được thiết kế từ những kiến trúc sư hàng đầu, được chăm chút tỉ mỉ,
+                          thiết kế sáng tạo, kết hợp giữa hiện đại và cổ điển đáp ứng với mọi nhu cầu nghỉ dưỡng của quý khách
+                          hàng. Thiết kế đẹp mắt, không gian thoải mái đi kèm mới hỗ trợ các dịch vụ đa dạng, đặt tiêu chí hài
+                          lòng của khách hàng lên hàng đầu. Tất cae các phòng đều có nhà tắm khép kín, TV màn ảnh rộng,...
+                          </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                        <div class="features-with-17-right-tp_sur">
+                            <div class="features-with-17-left1">
+                                <span class="fa fa-navicon" style='color:yellowgreen'  aria-hidden="true"></span>
+                            </div>
+                            <div class="features-with-17-left2">
+                                <h5>Thể Thao</h5>
+                                <h6><a href="#hoboi">Hồ Bơi</a></h6>
+                                <p> Ở Wave, chúng tôi xây dựng 2 kiểu mẫu hồ bơi dành cho người lớn và có
+                                  cả hồ bới dành cho trẻ em. Hồ bơi được thay nước mỗi ngày, dọn dẹp sạch sẽ,
+                                  tạo nên quang cảnh thoáng mát, hòa hợp với thiên nhiên.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-sm-5 mt-4">
+                        <div class="features-with-17-right-tp_sur">
+                            <div class="features-with-17-left1">
+                                <span class="fa fa-cutlery fa-5x" style='color:yellowgreen' aria-hidden="true"></span>
+                            </div>
+                            <div class="features-with-17-left2">
+                                <h5>Ăn Uống</h5>
+                                <h6><a href="#thucan">Gọi Thức Ăn Nhanh</a></h6>
+                                <p>
+                                  Wave hỗ trợ dịch vụ gọi thức ăn nhanh khi quý khách có nhu cầu.
+                                  Chọn nguồn cung cấp đảm bảo an toàn vệ sinh thực phẩm và chất lượng.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-sm-5 mt-4">
+                        <div class="features-with-17-right-tp_sur">
+                            <div class="features-with-17-left1">
+                                <span class="fa fa-wifi" style='color:yellowgreen' aria-hidden="true"></span>
+                            </div>
+                            <div class="features-with-17-left2">
+                                <h5>Giải Trí</h5>
+                                <h6><a href="#bar">Quầy Bar</a> </h6>
+                                <p> Wave có khu vực Bar phục vụ nhu cầu thư giãn, giải trí của quý khách.
+                                  Cung cấp nhiều loại rượu vang nổi tiếng, cùng các loại thức uống thượng hạng.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-sm-5 mt-4">
+                        <div class="features-with-17-right-tp_sur">
+                            <div class="features-with-17-left1">
+                                <span class="fa fa-feed	fx-5x" style='color:yellowgreen' aria-hidden="true"></span>
+                            </div>
+                            <div class="features-with-17-left2">
+                                <h5>Tiện Nghi</h5>
+                                <h6><a href="#wifi">Wifi Tốc Độ Cao</a> </h6>
+                                <p>
+                                    Wave cung cấp dịch vụ Wifi Free tốc độ cao phủ sóng toàn bộ khu vực của khách sạn.<br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-sm-5 mt-4">
+                        <div class="features-with-17-right-tp_sur">
+                            <div class="features-with-17-left1">
+                                <span class="fa fa-headphones" style='color:yellowgreen' aria-hidden="true"></span>
+                            </div>
+                            <div class="features-with-17-left2">
+                                <h5>Đi Lại</h5>
+                                <h6><a href="#xe">Thuê Ô Tô & Xe Đưa Đón Sân Bay</a> </h6>
+                                <p>Wave đáp ứng mọi nhu cầu đi lại của quý khách một cách tốt nhất.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="w3l-stats">
+    <div class="main-w3 py-5">
+        <div class="container py-lg-3">
+            <div class="row align-items-center">
+                <div class="col-md-6 title">
+                    <h3 class="title-big">Một Số Tiện Nghi</h3>
+                    <img src="{{url_for('static',filename='images/tiennghi.jpg')}}" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 main-cont-wthree-fea text-center">
+                    <div class="row">
+                        <div class="col-6 pr-2 mt-4">
+                            <div class="grids-speci1">
+                                <span class="fa fa-television" style='color:orange'></span>
+                                <h3 class="title-spe">Truyền hình</h3>
+                            </div>
+                        </div>
+                        <div class="col-6 pl-2 mt-4">
+                            <div class="grids-speci1">
+                                <span class="fa fa-car" style='color:purple' ></span>
+                                <h3 class="title-spe">Ô tô</h3>
+                            </div>
+                        </div>
+                        <div class="col-6 pr-2 mt-4">
+                            <div class="grids-speci1">
+                                <span class="fa fa-cutlery" style='color:black'></span>
+                                <h3 class="title-spe">Ăn & Uống</h3>
+                            </div>
+                        </div>
+                        <div class="col-6 pl-2 mt-4">
+                            <div class="grids-speci1">
+                                <span class="fa fa-birthday-cake" style='color:peru'></span>
+                                <h3 class="title-spe">Tiệc & Hội Nghị</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="w3l-feature-2">
+    <div class="grid top-bottom py-5">
+        <div class="container py-md-5">
+            <h3 class="title-big text-center">Không Gian Thiết Kế</h3>
+            <div class="middle-section row mt-lg-5 pt-md-3">
+                <div class="three-grids-columns col-lg-4 col-md-6">
+                    <img src="{{url_for('static',filename='images/hoboi.jpg')}}" style="height: 300px" class="img-fluid">
+                    <div class="info">
+                        <h4> Hồ Bơi </h4>
+                         <p> Rất Hân Hạnh Được Phục Vụ Quý Khách.
+                         </p>
+                    </div>
+                </div>
+                <div class="three-grids-columns col-lg-4 col-md-6 mt-md-0 mt-4">
+                    <img src="{{url_for('static',filename='images/nhahang.png')}}" style="height: 300px" class="img-fluid">
+                    <div class="info">
+                        <h4> Nhà Hàng </h4>
+                        <p>Rất Hân Hạnh Được Phục Vụ Quý Khách.</p>
+                    </div>
+                </div>
+                <div class="three-grids-columns col-lg-4 col-md-6 mt-lg-0 mt-4">
+                    <img src="{{url_for('static',filename='images/gym.jpg')}}" style="height: 300px"  class="img-fluid">
+                    <div class="info">
+                        <h4> Phòng Gym </h4>
+                        <p>Rất Hân Hạnh Được Phục Vụ Quý Khách.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% block content %}
+    {% endblock %}
+{% endblock %}

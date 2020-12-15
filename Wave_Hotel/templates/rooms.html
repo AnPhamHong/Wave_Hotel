@@ -1,0 +1,48 @@
+{% extends 'base/layout.html' %}
+{% block banner %}
+    <div class="container">
+        <h1 class="text-center"> DANH MỤC PHÒNG
+        <div>
+            <form>
+                <div class="form-group">
+                    <input class="form-control"
+                           name="kw"
+                           placeholder="Nhập tên phòng cần tìm (King, Twin, Luxury, VIP,...)" />
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Tìm kiếm"
+                           class="btn btn-danger" />
+                </div>
+            </form>
+        </div> </h1>
+            <table class="table">
+            <tr>
+                <th></th>
+                <th style="font-size: 20px"> ID </th>
+                <th style="font-size: 20px"> Tên </th>
+                <th style="font-size: 20px"> Loại Phòng </th>
+                <th style="font-size: 20px"> Giá/ đêm </th>
+                <th style="font-size: 20px"> Tình Trạng </th>
+                <th></th>
+                <td></td>
+            </tr>
+            {% for r in rooms %}
+            <tr>
+                <td><img src="{{ url_for('static', filename = r.image) }}" alt = "{{ r.name }}" width="300" height="200"/></td>
+                <td>{{ r.id }}</td>
+                <td><a href="{{ url_for('room_detail',cate_id = r.id) }}"> {{ r.name }} </a></td>
+                <td> {{ r.categoryrooms.name }} </td>
+                <td> {{ r.categoryrooms.price }}</td>
+                <td> {{ r.conditionRoom.value }}</td>
+                <td><a href="{{url_for('book_rooms')}}">Đặt ngay</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        </div>
+
+{% block content %}
+    {% endblock %}
+{% endblock %}

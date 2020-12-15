@@ -1,0 +1,30 @@
+
+<div id = "header" class="header">
+         <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+            <div class="container">
+               <a class="navbar-brand"><img src="{{url_for('static', filename = 'images/iconKH.png')}}" style="height: 70px"/></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse"
+                       data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               WAVE HOTEL
+               <div class="collapse navbar-collapse" id="show-menu">
+                  <ul class="navbar-nav ml-auto"></ul>
+                   <li class="nav-item active">
+                        <a class="nav-link" href="{{url_for('index')}}">Trang Chủ</a></li>
+                   <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('show_rooms')}}">Phòng</a></li>
+                   <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('services')}}">Dịch Vụ</a></li>
+                   <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('contactWave')}}">Liên Hệ</a></li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('book_rooms')}}">ĐẶT PHÒNG</a></li>
+                  <li class="nav-item">
+                        <a  href="{{url_for('login_admin')}}">ĐĂNG NHẬP</a></li>
+               </div>
+            </div>
+         </nav>
+      </div>
+
+

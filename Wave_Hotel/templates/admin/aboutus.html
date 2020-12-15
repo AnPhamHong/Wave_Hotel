@@ -1,0 +1,55 @@
+{% extends "admin/master.html" %}
+
+{% block body %}
+    {% if current_user.is_authenticated %}
+
+    <div class="row">
+        <div class="col-md-12 col-lg-8 mb-5">
+            <form class="p-5 bg-white" action="#">
+                <div class="row form-group">
+                    <div class="col-md-12 mb-3 mb-md-0">
+                        <label class="font-weight-bold" for="fullname">Họ & Tên của Quý Khách</label>
+                        <input id="fullname" class="form-control" type="text" placeholder="Họ tên..." required="required">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label class="font-weight-bold" for="email">Email</label>
+                        <input id="email" class="form-control" type="email" placeholder="Email..." required="required">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12 mb-3 mb-md-0">
+                        <label class="font-weight-bold" for="phone">Số Điện Thoại</label>
+                        <input id="phone" class="form-control" type="text" placeholder="SĐT..." required="required">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12 ">
+                        <label class="font-weight-bold" for="message">Lời Nhắn</label>
+                        <textarea id="message" class="form-control" name="message" placeholder="Xin quý khách để lại lời nhắn, góp ý, khiếu nại hoặc thắc mắc về Wave Hotel. Chúng tôi sẽ liên hệ với quý khách sớm nhất có thể. Wave xin chân thành cảm ơn!"
+                                  cols="30" rows="5" style="font-weight: italic" required="required"></textarea>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <input class="btn btn-primary pill px-4 py-2" type="submit" value="Gửi" style="margin-left: 20px">
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-4">
+            <div class="p-4 mb-3 bg-white">
+                <br>
+                <h3 class="h5 text-black mb-3">Thông Tin Liên Hệ</h3>
+                <p class="mb-0 font-weight-bold">Địa Chỉ</p>
+                <p class="mb-4">203 Hải Vân - Bãi Trước, Phường 3, Thành Phố Vũng Tàu </p>
+                <p class="mb-0 font-weight-bold">Số Điện Thoại</p>
+                <p class="mb-4">+8 456 056 725</p>
+                <p class="mb-0 font-weight-bold">Địa Chỉ Email</p>
+                <p class="mb-4">wavehotel.vt@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    {% else %}
+        {% include "admin/aboutus.html" %}
+    {% endif %}
+{% endblock %}

@@ -1,7 +1,7 @@
-{% extends "admin/master.html" %}
+{% extends 'base/layout.html' %}
+{% block banner %}
 
-{% block body %}
-    {% if current_user.is_authenticated %}
+
     <div class="box">
             <div>
                 <img src="/static/images/hotel_the_enchanted_garden.jpg" height="300" width="273" class="cooker">
@@ -17,7 +17,5 @@
             </div>
         </div>
     </div>
-    {% else %}
-        {% include "admin/login.html" %}
-    {% endif %}
+
 {% endblock %}

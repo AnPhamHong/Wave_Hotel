@@ -1,0 +1,24 @@
+{% extends 'base/layout.html' %}
+{% block banner %}
+    <div class="container">
+   <div class="row">
+       <div class="col-md-6">
+           <img src="{{ url_for('static', filename = rooms.image) }}" style="width: 670px; height: 400px" alt = "{{rooms.name}}" >
+       </div>
+       <div class="col-md-6">
+           <h3>
+               <ul>
+                   <li style="color: green; text-align: center">{{ rooms.name }}</li><br/>
+                   <li style="text-transform: none; text-align: justify"> {{ rooms.categoryrooms.description }}</li><br/>
+                   <li style="text-transform: none; text-align: center"> Số lượng: {{ rooms.categoryrooms.maxPerson }} khách</li>
+                   <li style="text-transform: none; text-align: center"> Giá: {{ rooms.categoryrooms.price }} VNĐ/ đêm</li>
+               </ul>
+           </h3>
+       </div>
+   </div>
+</div>
+{% block content %}
+    {% endblock %}
+{% block footer %}
+    {% endblock %}
+{% endblock %}

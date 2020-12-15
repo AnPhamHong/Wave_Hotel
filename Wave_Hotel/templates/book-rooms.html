@@ -1,0 +1,68 @@
+{% extends 'base/layout.html' %}
+{% block banner %}
+
+<section class="w3l-booking-top" style="background-color: black; height: 700px">
+    <div class="booking-form-61">
+        <div class="container">
+            <div class="booking-top-gds">
+                <div class="form-right-inf">
+                    <div class="booking-form-content" style="background-color: yellow">
+                        <h6 style="text-align: center">Nhanh Tay Nhanh Tay Đặt Ngay Bây Giờ!</h6>
+                        <form action="#" class="book-depature-6 signin-form" method="post">
+                            <div class="d-grid grid-col-2">
+                                <div class="hny-frm_grid">
+                                    <h5>Họ & Tên</h5>
+                                    <input class="name" name="Text" type="text" placeholder="Nhập tên..." required="">
+                                </div>
+                                <div class="hny-frm_grid">
+                                    <h5>Số điện thoại</h5>
+                                    <input class="phone" name="Text" type="phone" placeholder="Nhập SĐT" required="">
+                                </div>
+                                <div class="hny-frm_grid">
+                                    <h5>Ngày Check-in</h5>
+                                    <input class="date" name="Text" type="date" placeholder="Date" required="">
+                                </div>
+                                <div class="hny-frm_grid">
+                                    <h5>Ngày Check-out</h5>
+                                    <input class="date" name="Text" type="date" placeholder="Date" required="">
+                                </div>
+                            </div>
+                            <div class="d-grid grid-col-2 mt-3">
+                                <div class="hny-frm_grid">
+                                    <h5>Người lớn</h5>
+                                    <select id="person1" name="person1" required="">
+                                        <option value="person1">1</option>
+                                        <option value="person2">2</option>
+                                        <option value="person3">3</option>
+                                    </select>
+                                </div>
+                                <div class="hny-frm_grid">
+                                    <h5>Trẻ em < 10 tuổi</h5>
+                                    <select id="person1" name="person1" required="">
+                                        <option value="person1">1</option>
+                                        <option value="person2">2</option>
+                                        <option value="person3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn btn-style btn-secondary book mt-3" style="background-color: green; padding: 10px 20px 10px;margin-left: 165px">Đặt Ngay</button>
+                            <p class="already" style="color: white">HÂN HẠNH ĐƯỢC PHỤC VỤ QUÝ KHÁCH</p>
+                        </form>
+                    </div>
+                </div>
+                 <div class="booking-forms-16-info align-self">
+                    <h3 class="title-big">KHÁCH SẠN WAVE</h3>
+                    <p>Sứ mệnh của chúng tôi là
+                    cung cấp các tiện nghi và dịch vụ tốt nhất cho khách đến ở,
+                    đồng thời tạo một môi trường làm việc lý tưởng cho nhân viên khách sạn
+                    và thu về lợi nhuận cho chủ đầu tư.
+                    Mục tiêu đưa Wave trở thành một trong những khách đẳng cấp tại Vũng Tàu.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    {% block content %}
+    {% endblock %}
+{% endblock %}
+

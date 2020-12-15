@@ -1,0 +1,26 @@
+
+<h1 class="text-center text-warning">HỆ THỐNG QUẢN LÝ KHÁCH SẠN WAVE XIN CHÀO</h1>
+<h4 class="text-center">Vui lòng đăng nhập để sử dụng hệ thống!</h4>
+
+<form method="post" action="{{ url_for('login_admin')}}">
+    <div class="container" >
+        <div class="form-group">
+                <div class="text-success text-center" >
+                    <div class="login-form jumbotron bg-dark text-white" style="width:550px;  margin:auto" >
+                        <div class="form-group">
+                            <input  class="form-control" name="username" value="" placeholder="Tên đăng nhập..."
+                                   id="login-name" type="text" style="height:50px"  >
+                        </div>
+                        <div class="form-group">
+                            <input  class="form-control" name="password" value="" placeholder="Mật khẩu..."
+                                   id="login-pass" type="password" style="height:50px">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Đăng Nhập" class="btn btn-success" />
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</form>

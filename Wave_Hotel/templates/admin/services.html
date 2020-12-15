@@ -1,0 +1,62 @@
+{% extends "admin/master.html" %}
+
+{% block body %}
+    {% if current_user.is_authenticated %}
+
+        <br><br><br>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="text-center p-4 item">
+              <span class="fa fa-forumbee fa-5x" style='color:red'></span>
+              <h2 class="h5"><br>Hồ bơi</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3" >
+            <div class="text-center p-4 item">
+              <span class="fa fa-cutlery fa-5x" style='color:yellowgreen'></span>
+              <h2 class="h5"><br>Gọi thức ăn nhanh</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="text-center p-4 item">
+              <span class="fa fa-black-tie fa-5x" style='color:palevioletred'></span>
+              <h2 class="h5"><br>Giặt ủi</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="text-center p-4 item">
+              <span class="fa fa-road fa-5x" style='color:peru'></span>
+              <h2 class="h5"><br>Bãi đổ xe</h2>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="text-center p-4 item">
+              <span class="fa fa-spinner fa-pulse fa-5x fa-fw" style='color:purple'></span>
+              <h2 class="h5"><br>Tạo mẫu tóc</h2>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="text-center p-4 item">
+              <span class="fa fa-glass fa-5x" style='color:peru'></span>
+              <h2 class="h5"><br>Quầy bar</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="text-center p-4 item">
+              <span class="fa fa-coffee fa-5x"style='color:black'></span>
+              <h2 class="h5"><br>Thức uống</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="text-center p-4 item">
+              <span class="fa fa-car fa-5x" style='color:orange'></span>
+              <h2 class="h5"><br>Thuê ô tô</h2>
+            </div>
+          </div>
+
+    {% else %}
+        {% include "admin/services.html" %}
+    {% endif %}
+{% endblock %}
